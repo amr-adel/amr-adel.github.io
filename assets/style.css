@@ -103,8 +103,48 @@ body {
   transform: scale(1.5);
 }
 
+/* MEDIA QUERIES ============================================================== */
+
 @media screen and (min-width: 1680px) {
   html {
     font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 55%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .tagline {
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  .social-icons li svg {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .social-icons li a:hover svg {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  body {
+    min-height: 300px;
+    align-items: flex-start;
   }
 }
