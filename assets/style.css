@@ -92,10 +92,15 @@ body {
   padding: 0 1rem;
 }
 
+.social-icons li:last-child a {
+  padding: 0 0 0 1rem;
+}
+
 .social-icons li svg {
   fill: var(--color-gray-100);
   width: 1.4rem;
   height: 1.4rem;
+  vertical-align: text-bottom;
   transition: transform 0.2s ease-out;
 }
 
