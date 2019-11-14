@@ -32,14 +32,14 @@ html {
   min-height: 100vh;
   box-sizing: border-box;
   font-size: 62.5%;
-  padding: var(--spacing);
 }
 
 body {
-  min-height: calc(100vh - var(--spacing) * 2);
-  width: 100%;
+  height: calc(100vh - var(--spacing) * 2);
+  width: calc(100vw - var(--spacing) * 2);
+  margin: var(--spacing);
   font-size: 1.4rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
   color: var(--color-gray-100);
