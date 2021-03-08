@@ -1,13 +1,13 @@
 :root {
   /* COLORS ================================================= */
-  --gray100: #f7fafc;
-  --gray300: #e2e8f0;
-  --gray700: #4a5568;
-  --gray900: #1a202c;
+  --gray100: #f3f4f6;
+  --gray300: #d1d5db;
+  --gray700: #374151;
+  --gray900: #111827;
 
   /* SPACING ================================================= */
-  --spacing: 2rem;
-  --icon-size: 2.3rem;
+  --spacing: 1.2rem;
+  --icon-size: 1.8rem;
 }
 
 *,
@@ -36,7 +36,7 @@ a:visited {
 html {
   min-height: 100vh;
   box-sizing: border-box;
-  font-size: 50%;
+  font-size: 62.5%;
 }
 
 body {
@@ -45,14 +45,13 @@ body {
   font-weight: 400;
   color: var(--gray300);
   padding: var(--spacing);
-  background-color: var(--gray900);
+  background-color: var(--gray700);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .wrapper {
@@ -77,22 +76,22 @@ main {
 }
 
 .brand-logo {
-  width: 14rem;
-  height: 14rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .brand-name {
   text-transform: uppercase;
   font-weight: 300;
   margin-top: 0.5rem;
-  font-size: 2.5rem;
-  letter-spacing: 0.2em;
+  font-size: 2.4rem;
+  letter-spacing: 0.07em;
 }
 
 .tagline {
   font-size: 1.4rem;
-  letter-spacing: 0.2em;
-  line-height: 1.65;
+  letter-spacing: 0.1em;
+  line-height: 1.9rem;
   margin-bottom: 1rem;
 }
 
@@ -109,7 +108,7 @@ main {
 }
 
 .social-icons li:not(:last-child) {
-  margin-right: 2%;
+  margin-right: 1rem;
 }
 
 .social-icons li svg {
@@ -118,17 +117,13 @@ main {
   width: var(--icon-size);
   height: var(--icon-size);
   transform: scale(1);
-  transition: transform 0.2s ease-out;
+  transition: transform 0.1s ease-out;
 }
 
 /* MEDIA QUERIES ============================================================== */
 @media screen and (hover: hover) {
-  :root {
-    --icon-size: 1.8rem;
-  }
-
   .social-icons li:not(:last-child) {
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
   }
 
   .social-icons li a {
@@ -136,18 +131,6 @@ main {
   }
 
   .social-icons li a:hover svg {
-    transform: scale(1.4);
-  }
-}
-
-@media screen and (min-width: 480px) {
-  html {
-    font-size: 56.25%;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  html {
-    font-size: 62.5%;
+    transform: scale(1.2);
   }
 }
